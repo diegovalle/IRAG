@@ -41,64 +41,140 @@ casos <- casos %>%
   group_by(states) %>%
   mutate(diff = diff(c(NA, ETI_IRAG)))
 
-casos_19_20 <- rbind(casos, casos19_3)
+casos_19_20 <- rbind(casos, casos19_3, casos_18_1, casos_17_1)
 casos_19_20$date <- as.Date(paste(str_sub(casos_19_20$season, 6), 
                                   casos_19_20$week - 1, 1, sep = "-"), 
                             "%Y-%U-%u")
+
+pop <- read_csv("data/pop.csv")
+pop$date <- NULL
+casos_19_20 <- left_join(casos_19_20, pop, by = c("states" = "state_name"))
+casos_19_20$rate <- casos_19_20$diff / casos_19_20$population * 10^5
 
 casos_19_20 <- casos_19_20  %>%
   arrange(season, week, states) %>%
   group_by(states) %>%
   mutate(order = diff[length(diff)] - diff[length(diff) - 1]) %>%
-  filter(week <= 12)
+  filter(week <= 16)
 
-casos_19_20$states <- reorder(casos_19_20$states, -casos_19_20$order)
-
-ggplot(casos_19_20, aes(week, diff, group = season, color = season)) +
-  geom_line(aes(linetype = season)) +
-  scale_linetype_manual(values = c("twodash", "solid"), guide  =FALSE) +
-  facet_wrap(~states) +
-  expand_limits(y = 0) +
-  xlab("semana epidemiológica") +
-  ylab("casos reportados") +
-  scale_color_manual("temporada", values = c("#00AFBB", "#FC4E07")) +
-  scale_x_continuous(breaks = pretty_breaks()) +
-  labs(title = str_c("Casos de Enfermedad tipo influenza (ETI) e Infección ", 
-                     "respiratoria aguda grave (IRAG) en México¸ por estado"),
-       subtitle = str_c("Incluye datos con fecha de corte del 19 marzo de 2020: semana epidemiológica 12.\n",
-                        "Por la forma en que se registran los datos la mayoría de los casos de ",
-                        "la semana epidemiológica 12\n",
-                        "corresponden a los ocurridos del 8 al 14 de marzo, pero incluyen algunos del 15 al 19 de marzo",
-                        "\nLos datos están ordenados por fecha de registro, no de ocurrencia. ",
-                        "La mayoría de los casos ocurren\nen la semana anterior a la que fueron ",
-                        "registrados, pero no todos."),
-       caption = "Fuente: Informes Semanales para la Vigilancia Epidemiológica de Influenza") +
-  theme_ft_rc()
-ggsave("graphs/eti_irag_states.png", width = 16.5, height = 12, dpi = 100)
 
 total <- casos_19_20 %>%
   group_by(week, season) %>%
   summarise(total = sum(diff))
 
+# total$t <- FALSE 
+# total[which(total$season %in% c("2016-2017",
+#                                 "2017-2018",
+#                                 "2018-2019")), ]$t <- TRUE
+# total = total %>%
+#   na.omit() %>%
+#   group_by(t, week) %>%
+#   summarize(max = max(total), min = min(total) ) %>%
+#   mutate(season = if_else(t, "2016 a 2019", "2019-2020"))
 
-ggplot(total, aes(week, total, group = season, color = season)) +
+ggplot(total, 
+       aes(week, total, group = season, color = season)) +
   geom_line(aes(linetype = season)) +
-  scale_linetype_manual(values = c("twodash", "solid"), guide  =FALSE) +
-  expand_limits(y = 0) +
+   expand_limits(y = 0) +
   xlab("semana epidemiológica") + 
-  scale_color_manual("temporada", values = c("#00AFBB", "#FC4E07")) +
+  scale_color_manual("temporada", values = c("#6baed6",
+                                             "#4292c6",
+                                             "#2171b5", "#f03b20")) + 
+  scale_linetype_manual(values = c(rep("dashed", 3), "solid"), guide = FALSE) +
   ylab("casos reportados") +
   scale_x_continuous(breaks = pretty_breaks()) +
   labs(title = str_c("Casos de Enfermedad tipo influenza (ETI) e\nInfección ", 
                      "respiratoria aguda grave (IRAG) en México"),
-       subtitle = str_c("Incluye datos con fecha de corte del 19 marzo de 2020: semana epidemiológica 12.\n",
-       "Por la forma en que se registran los datos la mayoría de los casos de ",
-       "la semana epidemiológica 12\n",
-       "corresponden a los ocurridos del 8 al 14 de marzo, pero incluyen",
-       "algunos del 15 al 19 de marzo.\n",
-       "Los datos están ordenados por fecha de registro, no de ocurrencia. ",
-       "La mayoría de los casos ocurren\nen la semana anterior a la que fueron ",
-       "registrados, pero no todos."),
+       subtitle = str_c("Incluye datos con fecha de corte del 9 de abril de 2020: semana epidemiológica 15.\n",
+                        "Por la forma en que se registran los datos la mayoría de los casos de ",
+                        "la semana epidemiológica 15\n",
+                        "corresponden a los ocurridos del 29 de marzo al 4 de abril, pero incluyen ",
+                        "algunos del 5 al 9 de abril\ny semanas anteriores\n",
+                        "Los datos están ordenados por fecha de registro, no de ocurrencia. ",
+                        "La mayoría de los casos ocurren\nen la semana anterior a la que fueron ",
+                        "registrados, pero no todos."),
        caption = "Fuente: Informes Semanales para la Vigilancia Epidemiológica de Influenza") +
   theme_ft_rc()
 ggsave("graphs/eti_irag_national.png", width = 12, height = 8, dpi = 100)
+
+
+
+# casos_19_20$t <- FALSE 
+# casos_19_20[which(casos_19_20$season %in% c("2016-2017",
+#                                 "2017-2018",
+#                                 "2018-2019")), ]$t <- TRUE
+# casos_19_20 <- casos_19_20 %>%
+#   na.omit() %>%
+#   group_by(t, week, states) %>%
+#   summarize(max = max(diff), min = min(diff) ) %>%
+#   mutate(season = if_else(t, "2016 a 2019", "2019-2020"))
+
+casos_19_20$states <- reorder(casos_19_20$states, -casos_19_20$order)
+
+
+ggplot(casos_19_20, 
+       aes(week, diff, group = season, color = season)) +
+  geom_line(aes(linetype = season)) +
+  facet_wrap(~states) +
+  expand_limits(y = 0) +
+  xlab("semana epidemiológica") +
+  ylab("casos reportados") +
+  scale_color_manual("temporada", values = c("#6baed6",
+                                             "#4292c6",
+                                             "#2171b5", "#f03b20")) + 
+  scale_linetype_manual(values = c(rep("dashed", 3), "solid"), guide = FALSE) +
+  scale_x_continuous(breaks = pretty_breaks()) +
+  labs(title = str_c("Casos de Enfermedad tipo influenza (ETI) e\nInfección ", 
+                     "respiratoria aguda grave (IRAG) en México"),
+       subtitle = str_c("Incluye datos con fecha de corte del 9 de abril de 2020: semana epidemiológica 15.\n",
+                        "Por la forma en que se registran los datos la mayoría de los casos de ",
+                        "la semana epidemiológica 15\n",
+                        "corresponden a los ocurridos del 29 de marzo al 4 de abril, pero incluyen ",
+                        "algunos del 5 al 9 de abril\ny semanas anteriores\n",
+                        "Los datos están ordenados por fecha de registro, no de ocurrencia. ",
+                        "La mayoría de los casos ocurren\nen la semana anterior a la que fueron ",
+                        "registrados, pero no todos."),
+       caption = "Fuente: Informes Semanales para la Vigilancia Epidemiológica de Influenza") +
+  theme_ft_rc() +
+  scale_y_continuous(trans='log10')
+ggsave("graphs/eti_irag_states.png", width = 16.5, height = 18, dpi = 100)
+
+casos_19_20 <- filter(casos_19_20, states %in% c("CIUDAD DE MÉXICO",
+                                                        "NUEVO LEÓN",
+                                                        "JALISCO",
+                                                        "ESTADO DE MÉXICO",
+                                                        "PUEBLA",
+                                                        "YUCATÁN",
+                                                        "QUINTANA ROO",
+                                                        "COLIMA"))
+                                                 #"MICHOACÁN"))
+casos_19_20$states <- reorder(casos_19_20$states, -casos_19_20$order)
+
+
+ggplot(casos_19_20, 
+       aes(week, diff, group = season, color = season)) +
+  geom_line(aes(linetype = season)) +
+  facet_wrap(~states) +
+  expand_limits(y = 0) +
+  xlab("semana epidemiológica") +
+  ylab("casos reportados") +
+  scale_color_manual("temporada", values = c("#6baed6",
+                                             "#4292c6",
+                                             "#2171b5", "#f03b20")) + 
+  scale_linetype_manual(values = c(rep("dashed", 3), "solid"), guide = FALSE) +
+  scale_x_continuous(breaks = pretty_breaks()) +
+  labs(title = str_c("Casos de Enfermedad tipo influenza (ETI) e\nInfección ", 
+                     "respiratoria aguda grave (IRAG) en México"),
+       subtitle = str_c("Incluye datos con fecha de corte del 9 de abril de 2020: semana epidemiológica 15.\n",
+                        "Por la forma en que se registran los datos la mayoría de los casos de ",
+                        "la semana epidemiológica 15\n",
+                        "corresponden a los ocurridos del 29 de marzo al 4 de abril, pero incluyen ",
+                        "algunos del 5 al 9 de abril\ny semanas anteriores\n",
+                        "Los datos están ordenados por fecha de registro, no de ocurrencia. ",
+                        "La mayoría de los casos ocurren\nen la semana anterior a la que fueron ",
+                        "registrados, pero no todos."),
+       caption = "Fuente: Informes Semanales para la Vigilancia Epidemiológica de Influenza") +
+  theme_ft_rc()
+
+ggsave("graphs/eti_irag_states_filter.png", width = 16.5, height = 8, dpi = 100)
+
