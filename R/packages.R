@@ -1,8 +1,9 @@
 ## Auto-Install the following packages
 .packs <- c("ggplot2", "tabulizer", "dplyr", "stringr",
             "rvest", "hrbrthemes", "scales", "tidyr", 
-            "lubridate", "directlabels", "readxl",
-            "readr", "ggrepel")
+            "directlabels", "readxl",
+            "readr", "ggrepel", "mgcv", "tidybayes", "tsibble", 
+            "lubridate")
 .success <- suppressWarnings(sapply(.packs, require, character.only = TRUE))
 if (length(names(.success)[!.success])) {
   install.packages(names(.success)[!.success])
