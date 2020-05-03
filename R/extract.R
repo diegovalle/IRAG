@@ -125,7 +125,7 @@ ggplot(total,
         plot.caption = element_text(size = 14),
         legend.title = element_text(size = 12),
         legend.text = element_text(size = 12),
-        legend.key.size = unit(1, "cm"))
+        legend.key.size = unit(1.2, "cm"))
 ggsave("graphs/eti_irag_national.png", width = 14, height = 8.5, dpi = 100)
 
 

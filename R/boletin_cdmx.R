@@ -89,16 +89,31 @@ df$tipo <- str_replace_all(df$tipo, "Enfermedad isquémica del$",
                            "Enfermedad isquémica del corazón")
 df$tipo <- str_replace_all(df$tipo, "Displasia cervical leve y$", 
                            "Displasia cervical leve y moderada")
+
+df$acum19[which(df$tipo == "Hipertensión arterial" &
+                  df$semana == 11)] <- 9320
+df$acumH[which(df$tipo == "Hipertensión arterial" &
+                  df$semana == 11)] <- 3778
+df$acumM[which(df$tipo == "Hipertensión arterial" &
+                  df$semana == 11)] <- 4895
+
 df <- df %>%
   group_by(tipo) %>%
-  mutate(y19 = c(NA, diff(acum19)))
+  mutate(acumH = if_else(is.na(acumH), 0, acumH),
+         acumM = if_else(is.na(acumM), 0, acumM)) %>%
+  mutate(y19 = c(acum19[1], diff(acum19))) %>%
+  mutate(y20 = c(acumH[1] + acumM[1], diff(acumH + acumM))) 
+df$y20[which(df$semana == 5 )] <- df$y20[which(df$semana == 6 )] -
+  df$n[which(df$semana == 6 )] 
+df$y20[which(df$semana == 6 )] <- df$n[which(df$semana == 6 )] 
 
-ggplot(df, aes(semana, n)) +
+ggplot(df, aes(semana, y20)) +
   geom_line(aes(color = "2020"), lwd = .9) +
-  geom_line(aes(semana, y19, color = "2019"), linetype = 2, lwd = .9) +
+  geom_line(aes(semana, y19, color = "2019"), lwd = .9) +
+  scale_y_comma() +
   scale_color_manual("año",
                      breaks = rev(c("2019", "2020")),
-                     values = rev(c("#67a9cf", "#ef8a62")),
+                     values = c("#0570b0", "#969696"),
                      labels = rev(c("2019", "2020"))) +
   expand_limits(y = 0) +
   labs(title = "Casos Nuevos de Enfermedades Selectas en la Ciudad de México",
@@ -107,5 +122,5 @@ ggplot(df, aes(semana, n)) +
   xlab("semana epidemiológica") +
   ylab("casos reportados") +
   facet_wrap(~ tipo, scales = "free_y") +
-  theme_ipsum()
+  theme_ipsum(base_size = 16)
 ggsave("graphs/boletin_cdmx.png", width = 16.5, height = 12, dpi = 100)
