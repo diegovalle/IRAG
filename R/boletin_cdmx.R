@@ -149,25 +149,23 @@ ggplot(df, aes(semana, y20)) +
   facet_wrap(~ tipo, scales = "free_y") +
   theme_ipsum(base_size = 16)
 ggsave("graphs/boletin_cdmx.png", width = 16.5, height = 12, dpi = 100)
-
-
-df$month <- rep(1:4, each = 16 * length(unique(tipo)))
-
-ggplot(df, aes(semana, y20p)) +
-  geom_line(aes(color = "2020"), lwd = .9) +
-  geom_line(aes(semana, y19p, color = "2019"), lwd = .9) +
-  geom_point(data = data.frame(semana = 11, y20p = 1), size = 2) +
-  scale_y_percent() +
-  scale_color_manual("año",
-                     breaks = rev(c("2019", "2020")),
-                     values = c("#0570b0", "#969696"),
-                     labels = rev(c("2019", "2020"))) +
-  expand_limits(y = 0) +
-  labs(title = "Casos Nuevos de Enfermedades Selectas en la Ciudad de México",
-       subtitle = "La última semana epidemiológica disponible es la 15 que va del 5 de abril 11 de abril",
-       caption = "Fuente: Boletín epidemiológico semanal de la CDMX (http://sersalud.cdmx.gob.mx/sspcdmx/direccion_epi_preven.php)") +
-  xlab("semana epidemiológica") +
-  ylab("casos reportados") +
-  facet_wrap(~ tipo) +
-  theme_ipsum(base_size = 16)
-ggsave("graphs/boletin_cdmx_per.png", width = 16.5, height = 12, dpi = 100)
+# 
+# 
+# ggplot(df, aes(semana, y20p)) +
+#   geom_line(aes(color = "2020"), lwd = .9) +
+#   geom_line(aes(semana, y19p, color = "2019"), lwd = .9) +
+#   geom_point(data = data.frame(semana = 11, y20p = 1), size = 2) +
+#   scale_y_percent() +
+#   scale_color_manual("año",
+#                      breaks = rev(c("2019", "2020")),
+#                      values = c("#0570b0", "#969696"),
+#                      labels = rev(c("2019", "2020"))) +
+#   expand_limits(y = 0) +
+#   labs(title = "Casos Nuevos de Enfermedades Selectas en la Ciudad de México",
+#        subtitle = "La última semana epidemiológica disponible es la 15 que va del 5 de abril 11 de abril",
+#        caption = "Fuente: Boletín epidemiológico semanal de la CDMX (http://sersalud.cdmx.gob.mx/sspcdmx/direccion_epi_preven.php)") +
+#   xlab("semana epidemiológica") +
+#   ylab("casos reportados") +
+#   facet_wrap(~ tipo) +
+#   theme_ipsum(base_size = 16)
+# ggsave("graphs/boletin_cdmx_per.png", width = 16.5, height = 12, dpi = 100)
