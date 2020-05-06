@@ -53,39 +53,3 @@ ggplot(bn, aes(week, value, group = year, color = year)) +
    xlab("semana epidemiológica") +
    ylab("número de casos")
 ggsave("graphs/boletin_nacional.png", width = 14, height = 8, dpi = 100)
-
-base_url <- "https://www.gob.mx/cms/uploads/attachment/file/550341/sem17.pdf"
-
-locate_areas(base_url, 23)
-for (file in list.files("cache/boletines_nacional/2020")) {
- out <- extract_tables(paste0("cache/boletines_nacional/2020/", file),
-                      method = "lattice",
-                      output = "data.frame")
- stop <- FALSE
- for (i in 1:length(out)) {
-   if ( str_detect(names(out[[i]]), "Otitis" ) ) {
-     print(out[[i]]);
-     stop <- TRUE 
-     break
-   }
-   for (j in 1:nrow( out[[i]] ) ) {
-     for (k in 1:ncol( out[[i]] ) ) {
-       if (!is.na( out[[i]][j, k]) )
-         if ( str_detect(as.character(out[[i]][j, k]), "Otitis" ) ) {
-           print(out[[i]][j, k]);
-           stop <- TRUE 
-           break
-         }
-     }
-     if (stop) {break}
-   }
-   if (stop) {break}
- }
-}
-View(out[[i]])
-
-for (i in 1:length(out))
-  for (j in 1:length(out[[i]])) {
-    if (str_detect("Infecciones", out[[i]][j]))
-    print(j);
-  }
