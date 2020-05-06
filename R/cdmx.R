@@ -1,7 +1,7 @@
 #page <- read_html("http://sersalud.cdmx.gob.mx/sspcdmx/direccion_epi_preven.php")
 
 cdmx <- read.csv("data/cdmx2020.csv")
-cdmx$week <- rep(c(1:9, 11:17), 1, each = 16)
+cdmx$week <- rep(c(1:9, 11:18), 1, each = 16)
 cdmx$season <- "2019-2020"
 cdmx <- cdmx  %>%
   arrange(season, week, alcaldía) %>%

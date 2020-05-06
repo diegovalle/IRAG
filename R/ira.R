@@ -17,8 +17,8 @@ ggplot(b, aes(week, value, group = year, color = year)) +
   scale_y_comma() +
   xlab("semana epidemilógica") +
   ylab("casos") +
-  labs(title = "Infecciones Respiratorias Agudas a nivel nacional (2010-2020)",
-       caption = "Fuente:Boletín Epidemiológico Sistema Nacional de Vigilancia Epidemiológica") +
+  labs(title = "Casos de Infecciones Respiratorias Agudas (IRA) a nivel nacional (2010-2020)",
+       caption = "Fuente: Boletín Epidemiológico Sistema Nacional de Vigilancia Epidemiológica") +
   scale_color_manual("año", 
                      breaks = c(2020, 2010),
                          values = c(rep("#969696", 10), "#0570b0"),
