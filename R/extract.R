@@ -103,14 +103,15 @@ ggplot(total,
                      labels = c("2019-2020", "promedio\nde las\ntemporadas\n2016-2017 a\n2018-2019")) + 
   scale_linetype_manual(values = c("solid", rep("solid", 3)), guide = FALSE) +
   ylab("casos reportados") +
-  scale_x_continuous(breaks = c(5, 10, 18),
+  scale_x_continuous(breaks = c(5, 10, 15, 19),
                      labels = c("5\n(en el 2020 va de\nene 26 a feb 1)", 
                                 "10\n(en el 2020 va de\nmar 1 a mar 7)",
+                                "15\n(en el 2020 va de\nabr 5 a abr 11)",
                                 "19\n(en el 2020 va de\nmay 3 a may 7)")) +
   labs(title = str_c("Casos de Enfermedad tipo influenza (ETI) e ", 
                      "Infección respiratoria aguda grave (IRAG) en México"),
        subtitle = str_c("La información proviene de 475 Unidades de Salud Monitoras de Influenza (USMI)\n",
-                        "Incluye datos con fecha de corte al 7 de mayo del 2020: semana epidemiológica 17. ",
+                        "Incluye datos con fecha de corte al 7 de mayo del 2020: semana epidemiológica 19. ",
                         "Los datos están ordenados por fecha de registro.\n",
                         "La mayoría de los casos ocurren en la semanas anteriores a la que fueron ",
                         "registrados, pero no todos. Los datos son preliminares\ne incompletos con fecha de acceso al 07/05/2020."),
