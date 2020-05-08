@@ -55,7 +55,7 @@ casos_19_20 <- casos_19_20  %>%
   arrange(season, week, states) %>%
   group_by(states) %>%
   mutate(order = rate[length(rate)] - rate[length(rate) - 1]) %>%
-  filter(week <= 18)
+  filter(week <= 19)
 
 
 total <- casos_19_20 %>%
@@ -106,14 +106,14 @@ ggplot(total,
   scale_x_continuous(breaks = c(5, 10, 18),
                      labels = c("5\n(en el 2020 va de\nene 26 a feb 1)", 
                                 "10\n(en el 2020 va de\nmar 1 a mar 7)",
-                                "18\n(en el 2020 va de\nabr 26 a abr 30)")) +
+                                "19\n(en el 2020 va de\nmay 3 a may 7)")) +
   labs(title = str_c("Casos de Enfermedad tipo influenza (ETI) e ", 
                      "Infección respiratoria aguda grave (IRAG) en México"),
        subtitle = str_c("La información proviene de 475 Unidades de Salud Monitoras de Influenza (USMI)\n",
-                        "Incluye datos con fecha de corte al 30 de abril del 2020: semana epidemiológica 18. ",
+                        "Incluye datos con fecha de corte al 7 de mayo del 2020: semana epidemiológica 17. ",
                         "Los datos están ordenados por fecha de registro.\n",
                         "La mayoría de los casos ocurren en la semanas anteriores a la que fueron ",
-                        "registrados, pero no todos. Los datos son preliminares\ne incompletos con fecha de acceso al 30/04/2020."),
+                        "registrados, pero no todos. Los datos son preliminares\ne incompletos con fecha de acceso al 07/05/2020."),
        caption = "Fuente: Informes Semanales para la Vigilancia Epidemiológica de Influenza (https://bit.ly/3bVZfBM)") +
   theme_ipsum() +
   theme(axis.text.x = element_text(size = 13),
@@ -165,10 +165,10 @@ ggplot(casos_19_20,
   scale_x_continuous(breaks = pretty_breaks()) +
   labs(title = str_c("Tasas de Enfermedad tipo influenza (ETI) e ", 
                      "Infección respiratoria aguda grave (IRAG) en México, por estado"),
-       subtitle = str_c("Incluye datos con fecha de corte al 30 de abril del 2020: semana epidemiológica 18.\n",
+       subtitle = str_c("Incluye datos con fecha de corte al 7 de mayo del 2020: semana epidemiológica 19.\n",
                         "Los datos están ordenados por fecha de registro. ",
                         "La mayoría de los casos ocurren en la semanas anteriores\na la que fueron ",
-                        "registrados, pero no todos. Los datos son preliminares e incompletos con fecha de acceso al 23/04/2020."),
+                        "registrados, pero no todos. Los datos son preliminares e incompletos con fecha de acceso al 07/05/2020."),
        caption = "Fuente: Informes Semanales para la Vigilancia Epidemiológica de Influenza (https://bit.ly/3bVZfBM)") +
   theme_ipsum() 
 ggsave("graphs/eti_irag_states.png", width = 16.5, height = 18, dpi = 100)

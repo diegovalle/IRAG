@@ -79,7 +79,8 @@ if (!file.exists("cache/casos17.csv")) {
     table_mess(links[15]),
     table_mess(links[16]),
     table_mess("https://www.gob.mx/salud/documentos/informes-semanales-para-la-vigilancia-epidemiologica-de-influenza-2017-semana-epidemiologica-17"),
-    table_mess("http://www.gob.mx/salud/documentos/informes-semanales-para-la-vigilancia-epidemiologica-de-influenza-2017-semana-epidemiologica-18")
+    table_mess("http://www.gob.mx/salud/documentos/informes-semanales-para-la-vigilancia-epidemiologica-de-influenza-2017-semana-epidemiologica-18"),
+    table_mess("http://www.gob.mx/salud/documentos/informes-semanales-para-la-vigilancia-epidemiologica-de-influenza-2017-semana-epidemiologica-19")
   )
   write.csv(casos_17_1, "cache/casos17.csv", row.names = FALSE)
 } else
