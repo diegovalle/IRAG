@@ -15,5 +15,5 @@ jobs:
       - uses: actions/checkout@v2
       - uses: r-lib/actions/setup-r@master
       - name: Check
-        run: main.R
+        run: Rscript main.R
         shell: Rscript {0}
