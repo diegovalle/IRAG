@@ -1,0 +1,11 @@
+name: Check program
+'on': push
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@master
+      - name: Install Package Dependencies
+        run:  Rscript main.R
+    container: rocker/verse:latest
