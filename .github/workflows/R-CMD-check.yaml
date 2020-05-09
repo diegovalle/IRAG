@@ -16,4 +16,4 @@ jobs:
       - uses: r-lib/actions/setup-r@master
       - name: Check
         run: Rscript main.R
-        shell: Rscript {0}
+        shell: bash
