@@ -1,6 +1,6 @@
 <!-- badges: start -->
-  [![R build status](https://github.com/diegovalle/IRAG/workflows/R-CMD-check/badge.svg)](https://github.com/diegovalle/IRAG/actions)
-  <!-- badges: end -->
+  ![Check program](https://github.com/diegovalle/IRAG/workflows/Check%20program/badge.svg?branch=master)
+<!-- badges: end -->
 
 # Datos de enfermedad tipo influenza (ETI) e infección respiratoria aguda grave (IRAG) 
 
