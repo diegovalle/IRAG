@@ -8,4 +8,4 @@ jobs:
         uses: actions/checkout@master
       - name: Run program
         run:  Rscript main.R
-    container: rocker/verse:latest
+    container: rocker/tidyverse:3.6.2
