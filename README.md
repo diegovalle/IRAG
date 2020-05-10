@@ -4,7 +4,7 @@
 
 # Datos de enfermedad tipo influenza (ETI) e infección respiratoria aguda grave (IRAG) 
 
-![ETI/IRAG](https://raw.githubusercontent.com/diegovalle/IRAG/meta/13.jpeg)
+![ETI/IRAG](https://github.com/diegovalle/IRAG/raw/master/meta/15.jpeg)
 
 Las fuentes son:
 
@@ -14,7 +14,7 @@ Las fuentes son:
 
 El repositorio también incluye código para limpiar los Boletines Epidemiológicos con otras enfermedades
 
-![ETI/IRAG](https://raw.githubusercontent.com/diegovalle/IRAG/meta/boletin_nacional.png)
+![ETI/IRAG](https://github.com/diegovalle/IRAG/raw/master/meta/boletin_nacional.png)
 
 [Boletín Epidemiológico](https://www.gob.mx/salud/documentos/boletinepidemiologico-sistema-nacional-de-vigilancia-epidemiologica-sistema-unico-de-informacion-231750)
 
