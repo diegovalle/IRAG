@@ -4,7 +4,7 @@
 
 # Datos de enfermedad tipo influenza (ETI) e infección respiratoria aguda grave (IRAG) 
 
-Los datos limpiados de los informes de influenza nacionales están en `data/ETI_IRAG.csv`
+Los datos limpiados de los informes de influenza nacionales están en `data/ETI_IRAG.csv`, los de los boletines (nacional) en `data/boletin_nacional.csv`
 
 ![ETI/IRAG](https://github.com/diegovalle/IRAG/raw/master/meta/15.jpeg)
 
