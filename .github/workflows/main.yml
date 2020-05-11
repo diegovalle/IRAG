@@ -6,6 +6,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@master
+      - name: Install rJava
+        run: Rscript -e "install.packages('rJava', repos = 'https://cran.rstudio.com/')"
       - name: Run program
         run:  Rscript main.R
     container: rocker/verse:3.6.2
