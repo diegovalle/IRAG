@@ -61,7 +61,7 @@ local({
   temp <- casos_19_20
   names(temp) <- c("state", "ETI_IRAG_acumulado", "semana",
                    "temporada", "ETI_IRAG_semanal", "fecha",
-                   "inegi_id", "tasa", "orden")
+                   "inegi_id", "pop", "tasa", "orden")
   write.csv(temp, "data/ETI_IRAG.csv", row.names = FALSE)
 })
 
