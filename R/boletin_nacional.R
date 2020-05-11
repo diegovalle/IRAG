@@ -34,7 +34,9 @@ bn <- bn %>%
    mutate(min = min(value)) %>%
    ungroup() %>%
    group_by(tipo) %>%
-   mutate(order = max(min[12:16]) - min(min[12:16]))
+   arrange(tipo, year, week) %>%
+   mutate(per = value / value[62]) %>%
+   mutate(order = per[62] - per[68])
 bn$tipo <- reorder(bn$tipo, -bn$order)
 
 ggplot(bn, aes(week, value, group = year, color = year)) +
@@ -52,4 +54,4 @@ ggplot(bn, aes(week, value, group = year, color = year)) +
    theme_ipsum(base_size = 16) +
    xlab("semana epidemiológica") +
    ylab("número de casos")
-ggsave("graphs/boletin_nacional.png", width = 14, height = 8, dpi = 100)
+ggsave("graphs/boletin_nacional.png", width = 14, height = 10, dpi = 100)
