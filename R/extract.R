@@ -57,6 +57,14 @@ casos_19_20 <- casos_19_20  %>%
   mutate(order = rate[length(rate)] - rate[length(rate) - 1]) %>%
   filter(week <= 19)
 
+local({
+  temp <- casos_19_20
+  names(temp) <- c("state", "ETI_IRAG_acumulado", "semana",
+                   "temporada", "ETI_IRAG_semanal", "fecha",
+                   "inegi_id", "tasa", "orden")
+  write.csv(temp, "data/ETI_IRAG.csv", row.names = FALSE)
+})
+
 
 total <- casos_19_20 %>%
   group_by(week, season) %>%
