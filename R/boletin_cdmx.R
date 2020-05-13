@@ -30,7 +30,7 @@ extract_table <- function(out, name, i) {
 }
 
 base_url <- "http://sersalud.cdmx.gob.mx/sspcdmx/Documentos/direccion/demp/boletin/Bolet%C3%ADn%20semanal%20de%20la%20Ciudad%20de%20M%C3%A9xico%20n%C3%BAmero%20"
-last_boletin <- 16
+last_boletin <- 17
 
 df <- data.frame()
 for (i in 1:last_boletin) {
@@ -142,7 +142,7 @@ ggplot(df, aes(semana, y20)) +
                      labels = rev(c("2019", "2020"))) +
   expand_limits(y = 0) +
   labs(title = "Casos de Enfermedades Selectas en la Ciudad de México",
-       subtitle = "La última semana epidemiológica disponible es la 15 que va del 5 de abril 11 de abril",
+       subtitle = "La última semana epidemiológica disponible es la 16 que va del 12 de abril 18 de abril",
        caption = "Fuente: Boletín epidemiológico semanal de la CDMX (http://sersalud.cdmx.gob.mx/sspcdmx/direccion_epi_preven.php)") +
   xlab("semana epidemiológica") +
   ylab("casos reportados") +

@@ -3,7 +3,7 @@
             "rvest", "hrbrthemes", "scales", "tidyr", 
             "directlabels", "readxl",
             "readr", "ggrepel", "mgcv", "tidybayes", "tsibble", 
-            "lubridate")
+            "lubridate", "forcats")
 .success <- suppressWarnings(sapply(.packs, require, character.only = TRUE))
 if (length(names(.success)[!.success])) {
   install.packages(names(.success)[!.success])
@@ -11,3 +11,4 @@ if (length(names(.success)[!.success])) {
 }
 
 options(stringsAsFactors = FALSE)
+
