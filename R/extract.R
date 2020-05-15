@@ -55,7 +55,7 @@ casos_19_20 <- casos_19_20  %>%
   arrange(season, week, states) %>%
   group_by(states) %>%
   mutate(order = rate[length(rate)] - rate[length(rate) - 1]) %>%
-  filter(week <= 19)
+  filter(week <= 20)
 
 local({
   temp <- casos_19_20
@@ -99,7 +99,7 @@ ggplot(total,
               fill = "red", color = "transparent", alpha = .3) +
   geom_line(aes(week, total, linetype = covid_seas, 
                 lwd  = size, color = covid_seas)) +
-  annotate("text", x = max(total$week) - 1.5, y = 5000, 
+  annotate("text", x = max(total$week) - 2, y = 5000, 
            label = paste0(comma(excess), "\nmás casos\nque el promedio\ndesde la\nsemana 15"),
            color = "black", size = 5) +
   scale_size( range = c(.5, 1.2), guide = FALSE) +
@@ -115,14 +115,14 @@ ggplot(total,
                      labels = c("5\n(en el 2020 va de\nene 26 a feb 1)", 
                                 "10\n(en el 2020 va de\nmar 1 a mar 7)",
                                 "15\n(en el 2020 va de\nabr 5 a abr 11)",
-                                "19\n(en el 2020 va de\nmay 3 a may 7)")) +
+                                "20\n(en el 2020 va de\nmay 10 a may 14)")) +
   labs(title = str_c("Casos de Enfermedad tipo influenza (ETI) e ", 
                      "Infección respiratoria aguda grave (IRAG) en México"),
        subtitle = str_c("La información proviene de 475 Unidades de Salud Monitoras de Influenza (USMI)\n",
-                        "Incluye datos con fecha de corte al 7 de mayo del 2020: semana epidemiológica 19. ",
+                        "Incluye datos con fecha de corte al 14 de mayo del 2020: semana epidemiológica 20 ",
                         "Los datos están ordenados por fecha de registro.\n",
                         "La mayoría de los casos ocurren en la semanas anteriores a la que fueron ",
-                        "registrados, pero no todos. Los datos son preliminares\ne incompletos con fecha de acceso al 07/05/2020."),
+                        "registrados, pero no todos. Los datos son preliminares\ne incompletos con fecha de acceso al 14/05/2020."),
        caption = "Fuente: Informes Semanales para la Vigilancia Epidemiológica de Influenza (https://bit.ly/3bVZfBM)") +
   theme_ipsum() +
   theme(axis.text.x = element_text(size = 13),
@@ -174,50 +174,50 @@ ggplot(casos_19_20,
   scale_x_continuous(breaks = pretty_breaks()) +
   labs(title = str_c("Tasas de Enfermedad tipo influenza (ETI) e ", 
                      "Infección respiratoria aguda grave (IRAG) en México, por estado"),
-       subtitle = str_c("Incluye datos con fecha de corte al 7 de mayo del 2020: semana epidemiológica 19.\n",
+       subtitle = str_c("Incluye datos con fecha de corte al 14 de mayo del 2020: semana epidemiológica 20.\n",
                         "Los datos están ordenados por fecha de registro. ",
                         "La mayoría de los casos ocurren en la semanas anteriores\na la que fueron ",
-                        "registrados, pero no todos. Los datos son preliminares e incompletos con fecha de acceso al 07/05/2020."),
+                        "registrados, pero no todos. Los datos son preliminares e incompletos con fecha de acceso al 14/05/2020."),
        caption = "Fuente: Informes Semanales para la Vigilancia Epidemiológica de Influenza (https://bit.ly/3bVZfBM)") +
   theme_ipsum() 
 ggsave("graphs/eti_irag_states.png", width = 16.5, height = 18, dpi = 100)
-
-casos_19_20 <- filter(casos_19_20, states %in% c("CIUDAD DE MÉXICO",
-                                                        "NUEVO LEÓN",
-                                                        "JALISCO",
-                                                        "ESTADO DE MÉXICO",
-                                                        "PUEBLA",
-                                                        "YUCATÁN",
-                                                        "QUINTANA ROO",
-                                                        "COLIMA"))
-                                                 #"MICHOACÁN"))
-casos_19_20$states <- reorder(casos_19_20$states, -casos_19_20$order)
-
-
-ggplot(casos_19_20, 
-       aes(week, diff, group = season, color = season)) +
-  geom_line(aes(linetype = season)) +
-  facet_wrap(~states) +
-  expand_limits(y = 0) +
-  xlab("semana epidemiológica") +
-  ylab("casos reportados") +
-  scale_color_manual("temporada", values = c("#6baed6",
-                                             "#4292c6",
-                                             "#2171b5", "#f03b20")) + 
-  scale_linetype_manual(values = c(rep("dashed", 3), "solid"), guide = FALSE) +
-  scale_x_continuous(breaks = pretty_breaks()) +
-  labs(title = str_c("Casos de Enfermedad tipo influenza (ETI) e\nInfección ", 
-                     "respiratoria aguda grave (IRAG) en México"),
-       subtitle = str_c("Incluye datos con fecha de corte del 9 de abril de 2020: semana epidemiológica 15.\n",
-                        "Por la forma en que se registran los datos la mayoría de los casos de ",
-                        "la semana epidemiológica 15\n",
-                        "corresponden a los ocurridos del 29 de marzo al 4 de abril, pero incluyen ",
-                        "algunos del 5 al 9 de abril\ny semanas anteriores\n",
-                        "Los datos están ordenados por fecha de registro, no de ocurrencia. ",
-                        "La mayoría de los casos ocurren\nen la semana anterior a la que fueron ",
-                        "registrados, pero no todos."),
-       caption = "Fuente: Informes Semanales para la Vigilancia Epidemiológica de Influenza") +
-  theme_ft_rc()
-
-ggsave("graphs/eti_irag_states_filter.png", width = 16.5, height = 8, dpi = 100)
-
+# 
+# casos_19_20 <- filter(casos_19_20, states %in% c("CIUDAD DE MÉXICO",
+#                                                         "NUEVO LEÓN",
+#                                                         "JALISCO",
+#                                                         "ESTADO DE MÉXICO",
+#                                                         "PUEBLA",
+#                                                         "YUCATÁN",
+#                                                         "QUINTANA ROO",
+#                                                         "COLIMA"))
+#                                                  #"MICHOACÁN"))
+# casos_19_20$states <- reorder(casos_19_20$states, -casos_19_20$order)
+# 
+# 
+# ggplot(casos_19_20, 
+#        aes(week, diff, group = season, color = season)) +
+#   geom_line(aes(linetype = season)) +
+#   facet_wrap(~states) +
+#   expand_limits(y = 0) +
+#   xlab("semana epidemiológica") +
+#   ylab("casos reportados") +
+#   scale_color_manual("temporada", values = c("#6baed6",
+#                                              "#4292c6",
+#                                              "#2171b5", "#f03b20")) + 
+#   scale_linetype_manual(values = c(rep("dashed", 3), "solid"), guide = FALSE) +
+#   scale_x_continuous(breaks = pretty_breaks()) +
+#   labs(title = str_c("Casos de Enfermedad tipo influenza (ETI) e\nInfección ", 
+#                      "respiratoria aguda grave (IRAG) en México"),
+#        subtitle = str_c("Incluye datos con fecha de corte del 9 de abril de 2020: semana epidemiológica 15.\n",
+#                         "Por la forma en que se registran los datos la mayoría de los casos de ",
+#                         "la semana epidemiológica 15\n",
+#                         "corresponden a los ocurridos del 29 de marzo al 4 de abril, pero incluyen ",
+#                         "algunos del 5 al 9 de abril\ny semanas anteriores\n",
+#                         "Los datos están ordenados por fecha de registro, no de ocurrencia. ",
+#                         "La mayoría de los casos ocurren\nen la semana anterior a la que fueron ",
+#                         "registrados, pero no todos."),
+#        caption = "Fuente: Informes Semanales para la Vigilancia Epidemiológica de Influenza") +
+#   theme_ft_rc()
+# 
+# ggsave("graphs/eti_irag_states_filter.png", width = 16.5, height = 8, dpi = 100)
+# 

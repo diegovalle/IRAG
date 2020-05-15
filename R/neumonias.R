@@ -166,7 +166,7 @@ df %>%
                        labels = c("2020\n(incremento)", "2020", "2018-2019")) +
   expand_limits(y = 0) +
   labs(title = "Casos de Neumonías y Bronconeumonías en México, por Estado",
-       subtitle = "La última semana epidemiológica disponible es la 19 que va del 19 de abril 25 de abril\nIncluye CIE-10ª REV. J12-J18 excepto J18.2, J13 y J14",
+       subtitle = "La última semana epidemiológica disponible es la 17 que va del 19 de abril 25 de abril\nIncluye CIE-10ª REV. J12-J18 excepto J18.2, J13 y J14",
        caption = "Fuente: Boletín epidemiológico Sistema Nacional de Vigilancia Epidemiológica") +
   xlab("semana epidemiológica") +
   ylab("casos reportados") +
@@ -188,7 +188,7 @@ df %>%
                      labels = rev(c("2018-2019", "2020"))) +
   expand_limits(y = 0) +
   labs(title = "Casos de Neumonías y Bronconeumonías en México, por Estado",
-       subtitle = "La última semana epidemiológica disponible es la 19 que va del 19 de abril 25 de abril\nIncluye CIE-10ª REV. J12-J18 excepto J18.2, J13 y J14",
+       subtitle = "La última semana epidemiológica disponible es la 17 que va del 19 de abril 25 de abril\nIncluye CIE-10ª REV. J12-J18 excepto J18.2, J13 y J14",
        caption = "Fuente: Boletín epidemiológico Sistema Nacional de Vigilancia Epidemiológica") +
   xlab("semana epidemiológica") +
   ylab("casos reportados") +

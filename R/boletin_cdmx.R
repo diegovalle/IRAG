@@ -142,7 +142,7 @@ ggplot(df, aes(semana, y20)) +
                      labels = rev(c("2019", "2020"))) +
   expand_limits(y = 0) +
   labs(title = "Casos de Enfermedades Selectas en la Ciudad de México",
-       subtitle = "La última semana epidemiológica disponible es la 16 que va del 12 de abril 18 de abril",
+       subtitle = "La última semana epidemiológica disponible es la 17 que va del 19 de abril 25 de abril",
        caption = "Fuente: Boletín epidemiológico semanal de la CDMX (http://sersalud.cdmx.gob.mx/sspcdmx/direccion_epi_preven.php)") +
   xlab("semana epidemiológica") +
   ylab("casos reportados") +
