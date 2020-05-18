@@ -151,8 +151,7 @@ df <- df %>%
   mutate(order = value[18] - value[11])
 df$color <- "#bababa"
 df$color[df$year == 2020] <- "#0571b0" 
-df$color[df$states %in% c("Ciudad de México", "Baja California", "Tlaxcala",
-                        "México", "Puebla", "Guerrero") &
+df$color[df$states %in% c("Ciudad de México", "Baja California", "Veracruz") &
            df$year == 2020] <- "#ca0020"
 
 df$states <- reorder(df$states, -df$order)
@@ -177,8 +176,7 @@ ggsave("graphs/neumonias_estados.png", width = 16.5, height = 14, dpi = 100)
 
 
 df %>%
-  filter(states %in% c("Ciudad de México", "Baja California", "Tlaxcala",
-                       "México", "Puebla", "Guerrero")) %>%
+  filter(states %in% c("Ciudad de México", "Baja California", "Veracruz")) %>%
   ggplot(aes(week, value, group = year, color = as.factor(year))) +
   geom_line(aes(size = size)) + 
   facet_wrap(~ states, scales = "free_y") +
