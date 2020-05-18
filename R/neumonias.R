@@ -48,11 +48,11 @@ if (!file.exists("cache/neumonias_nacional.csv")) {
   
   ll19 <- list()
   l <- 1
-  for (file in list.files("cache/boletines_nacional/2019/")[1:18]) {
+  for (file in list.files("cache/boletines_nacional/2019/")[1:19]) {
     out <- extract_tables(paste0("cache/boletines_nacional/2019/", file),
                           method = "stream", output = "data.frame")
     n <- data.frame()
-    regex <- "NeNumeuomnoí|Bonrocnoc|nuemumonías|Bronconeu|Nuemun|Neumon|Bonroc|Bornoc"
+    regex <- "coneumonías|NeNumeuomnoí|Bonrocnoc|nuemumonías|Bronconeu|Nuemun|Neumon|Bonroc|Bornoc"
     if (file == "sem04.pdf")
       regex = "onías$"
     if (file == "sem06.pdf")
@@ -61,6 +61,8 @@ if (!file.exists("cache/neumonias_nacional.csv")) {
       regex = "nías$"
     if (file == "sem18.pdf")
       regex = "nías$"
+    if (file == "sem19.pdf")
+      regex = "coneumonías$"
     for (i in 1:length(out)) {
       if (any(str_detect(names(out[[i]]), regex))) {
         n <- out[[i]][, which(str_detect(names(out[[i]]), regex) == TRUE)]
@@ -89,7 +91,7 @@ if (!file.exists("cache/neumonias_nacional.csv")) {
   
   ll18 <- list()
   l <- 1
-  for (file in list.files("cache/boletines_nacional/2018/")[1:18]) {
+  for (file in list.files("cache/boletines_nacional/2018/")[1:19]) {
     out <- extract_tables(paste0("cache/boletines_nacional/2018/", file),
                           method = "stream", output = "data.frame")
     n <- data.frame()
@@ -146,7 +148,7 @@ df$size <- 1
 df$size[df$year == 2020] <- 1.1
 df <- df %>% 
   group_by(states) %>%
-  mutate(order = value[17] - value[11])
+  mutate(order = value[18] - value[11])
 df$color <- "#bababa"
 df$color[df$year == 2020] <- "#0571b0" 
 df$color[df$states %in% c("Ciudad de México", "Baja California", "Tlaxcala",

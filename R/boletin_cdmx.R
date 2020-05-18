@@ -30,7 +30,7 @@ extract_table <- function(out, name, i) {
 }
 
 base_url <- "http://sersalud.cdmx.gob.mx/sspcdmx/Documentos/direccion/demp/boletin/Bolet%C3%ADn%20semanal%20de%20la%20Ciudad%20de%20M%C3%A9xico%20n%C3%BAmero%20"
-last_boletin <- 17
+last_boletin <- 18
 
 df <- data.frame()
 for (i in 1:last_boletin) {
@@ -111,6 +111,13 @@ df$acumH[which(df$tipo == "Hipertensión arterial" &
                   df$semana == 11)] <- 3778
 df$acumM[which(df$tipo == "Hipertensión arterial" &
                   df$semana == 11)] <- 4895
+
+df$acum19[which(df$tipo == "Hipertensión arterial" &
+                  df$semana == 18)] <- 14894
+df$acumH[which(df$tipo == "Hipertensión arterial" &
+                 df$semana == 18)] <- 5467
+df$acumM[which(df$tipo == "Hipertensión arterial" &
+                 df$semana == 18)] <- 6684
 
 df <- df %>%
   group_by(tipo) %>%

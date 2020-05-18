@@ -70,7 +70,7 @@ page <- read_html("https://www.gob.mx/salud/acciones-y-programas/informes-semana
 links <- page %>% html_nodes("a") %>% html_attr('href')
 
 base_link <- "http://www.gob.mx/salud/documentos/informes-semanales-para-la-vigilancia-epidemiologica-de-influenza-2018-semana-epidemiologica-"
-links <- paste0(base_link, c(paste0("0", 1:9), 10:19))
+links <- paste0(base_link, c(paste0("0", 1:9), 10:20))
 
 if (!file.exists("cache/casos18.csv")) {
   casos_18_1 <- rbind(
@@ -92,7 +92,8 @@ if (!file.exists("cache/casos18.csv")) {
     table_mess(links[16]),
     table_mess(links[17]),
     table_mess(links[18]),
-    table_mess(links[19])
+    table_mess(links[19]),
+    table_mess(links[20])
   )
   write.csv(casos_18_1, "cache/casos18.csv", row.names = FALSE)
 } else
