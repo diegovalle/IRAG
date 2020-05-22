@@ -6,7 +6,8 @@ page <- read_html("https://www.gob.mx/salud/documentos/informes-semanales-para-l
 links <- page %>% html_nodes("a") %>% html_attr('href')
 
 casos <- data.frame()
-for (url in links[which(str_detect(links, "/cms/uploads/attachment/file/"))]) {
+for (url in rev(links[which(str_detect(links, 
+                                       "/cms/uploads/attachment/file/"))])[1:20]) {
   # Extract the table
   print(url)
   out <- extract_tables(paste0(base_url, url))
@@ -111,7 +112,7 @@ ggplot(total,
                      labels = c("2019-2020", "promedio\nde las\ntemporadas\n2016-2017 a\n2018-2019")) + 
   scale_linetype_manual(values = c("solid", rep("solid", 3)), guide = FALSE) +
   ylab("casos reportados") +
-  scale_x_continuous(breaks = c(5, 10, 15, 19),
+  scale_x_continuous(breaks = c(5, 10, 15, 20),
                      labels = c("5\n(en el 2020 va de\nene 26 a feb 1)", 
                                 "10\n(en el 2020 va de\nmar 1 a mar 7)",
                                 "15\n(en el 2020 va de\nabr 5 a abr 11)",
