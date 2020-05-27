@@ -17,6 +17,7 @@
 "Aguascalientes",2020,"V17",16,16
 "Aguascalientes",2020,"V18",16,17
 "Aguascalientes",2020,"V19",15,18
+"Aguascalientes",2020,"V20",3,19
 "Baja California",2020,"V2",225,1
 "Baja California",2020,"V3",272,2
 "Baja California",2020,"V4",210,3
@@ -35,6 +36,7 @@
 "Baja California",2020,"V17",291,16
 "Baja California",2020,"V18",253,17
 "Baja California",2020,"V19",253,18
+"Baja California",2020,"V20",298,19
 "Baja California Sur",2020,"V2",18,1
 "Baja California Sur",2020,"V3",11,2
 "Baja California Sur",2020,"V4",11,3
@@ -53,6 +55,7 @@
 "Baja California Sur",2020,"V17",2,16
 "Baja California Sur",2020,"V18",3,17
 "Baja California Sur",2020,"V19",6,18
+"Baja California Sur",2020,"V20",8,19
 "Campeche",2020,"V2",8,1
 "Campeche",2020,"V3",7,2
 "Campeche",2020,"V4",7,3
@@ -71,6 +74,7 @@
 "Campeche",2020,"V17",2,16
 "Campeche",2020,"V18",5,17
 "Campeche",2020,"V19",9,18
+"Campeche",2020,"V20",13,19
 "Coahuila",2020,"V2",168,1
 "Coahuila",2020,"V3",144,2
 "Coahuila",2020,"V4",163,3
@@ -89,6 +93,7 @@
 "Coahuila",2020,"V17",23,16
 "Coahuila",2020,"V18",32,17
 "Coahuila",2020,"V19",20,18
+"Coahuila",2020,"V20",25,19
 "Colima",2020,"V2",11,1
 "Colima",2020,"V3",7,2
 "Colima",2020,"V4",8,3
@@ -107,6 +112,7 @@
 "Colima",2020,"V17",3,16
 "Colima",2020,"V18",8,17
 "Colima",2020,"V19",11,18
+"Colima",2020,"V20",3,19
 "Chiapas",2020,"V2",54,1
 "Chiapas",2020,"V3",61,2
 "Chiapas",2020,"V4",53,3
@@ -125,6 +131,7 @@
 "Chiapas",2020,"V17",21,16
 "Chiapas",2020,"V18",22,17
 "Chiapas",2020,"V19",22,18
+"Chiapas",2020,"V20",18,19
 "Chihuahua",2020,"V2",231,1
 "Chihuahua",2020,"V3",271,2
 "Chihuahua",2020,"V4",258,3
@@ -143,6 +150,7 @@
 "Chihuahua",2020,"V17",118,16
 "Chihuahua",2020,"V18",98,17
 "Chihuahua",2020,"V19",112,18
+"Chihuahua",2020,"V20",114,19
 "Ciudad de México",2020,"V2",378,1
 "Ciudad de México",2020,"V3",427,2
 "Ciudad de México",2020,"V4",372,3
@@ -161,6 +169,7 @@
 "Ciudad de México",2020,"V17",356,16
 "Ciudad de México",2020,"V18",566,17
 "Ciudad de México",2020,"V19",489,18
+"Ciudad de México",2020,"V20",582,19
 "Durango",2020,"V2",21,1
 "Durango",2020,"V3",31,2
 "Durango",2020,"V4",22,3
@@ -179,6 +188,7 @@
 "Durango",2020,"V17",11,16
 "Durango",2020,"V18",5,17
 "Durango",2020,"V19",3,18
+"Durango",2020,"V20",4,19
 "Guanajuato",2020,"V2",130,1
 "Guanajuato",2020,"V3",130,2
 "Guanajuato",2020,"V4",108,3
@@ -197,6 +207,7 @@
 "Guanajuato",2020,"V17",35,16
 "Guanajuato",2020,"V18",72,17
 "Guanajuato",2020,"V19",21,18
+"Guanajuato",2020,"V20",45,19
 "Guerrero",2020,"V2",8,1
 "Guerrero",2020,"V3",24,2
 "Guerrero",2020,"V4",42,3
@@ -215,6 +226,7 @@
 "Guerrero",2020,"V17",18,16
 "Guerrero",2020,"V18",50,17
 "Guerrero",2020,"V19",9,18
+"Guerrero",2020,"V20",29,19
 "Hidalgo",2020,"V2",90,1
 "Hidalgo",2020,"V3",70,2
 "Hidalgo",2020,"V4",52,3
@@ -233,6 +245,7 @@
 "Hidalgo",2020,"V17",13,16
 "Hidalgo",2020,"V18",27,17
 "Hidalgo",2020,"V19",20,18
+"Hidalgo",2020,"V20",32,19
 "Jalisco",2020,"V2",554,1
 "Jalisco",2020,"V3",509,2
 "Jalisco",2020,"V4",711,3
@@ -251,6 +264,7 @@
 "Jalisco",2020,"V17",136,16
 "Jalisco",2020,"V18",122,17
 "Jalisco",2020,"V19",103,18
+"Jalisco",2020,"V20",118,19
 "México",2020,"V2",301,1
 "México",2020,"V3",223,2
 "México",2020,"V4",193,3
@@ -269,6 +283,7 @@
 "México",2020,"V17",84,16
 "México",2020,"V18",197,17
 "México",2020,"V19",242,18
+"México",2020,"V20",313,19
 "Michoacán",2020,"V2",32,1
 "Michoacán",2020,"V3",50,2
 "Michoacán",2020,"V4",64,3
@@ -287,6 +302,7 @@
 "Michoacán",2020,"V17",14,16
 "Michoacán",2020,"V18",20,17
 "Michoacán",2020,"V19",28,18
+"Michoacán",2020,"V20",21,19
 "Morelos",2020,"V2",14,1
 "Morelos",2020,"V3",17,2
 "Morelos",2020,"V4",40,3
@@ -305,6 +321,7 @@
 "Morelos",2020,"V17",17,16
 "Morelos",2020,"V18",12,17
 "Morelos",2020,"V19",19,18
+"Morelos",2020,"V20",15,19
 "Nayarit",2020,"V2",23,1
 "Nayarit",2020,"V3",26,2
 "Nayarit",2020,"V4",22,3
@@ -323,6 +340,7 @@
 "Nayarit",2020,"V17",11,16
 "Nayarit",2020,"V18",18,17
 "Nayarit",2020,"V19",4,18
+"Nayarit",2020,"V20",2,19
 "Nuevo León",2020,"V2",225,1
 "Nuevo León",2020,"V3",160,2
 "Nuevo León",2020,"V4",182,3
@@ -341,6 +359,7 @@
 "Nuevo León",2020,"V17",38,16
 "Nuevo León",2020,"V18",47,17
 "Nuevo León",2020,"V19",41,18
+"Nuevo León",2020,"V20",56,19
 "Oaxaca",2020,"V2",39,1
 "Oaxaca",2020,"V3",33,2
 "Oaxaca",2020,"V4",44,3
@@ -359,6 +378,7 @@
 "Oaxaca",2020,"V17",19,16
 "Oaxaca",2020,"V18",21,17
 "Oaxaca",2020,"V19",27,18
+"Oaxaca",2020,"V20",16,19
 "Puebla",2020,"V2",62,1
 "Puebla",2020,"V3",77,2
 "Puebla",2020,"V4",72,3
@@ -377,6 +397,7 @@
 "Puebla",2020,"V17",21,16
 "Puebla",2020,"V18",83,17
 "Puebla",2020,"V19",44,18
+"Puebla",2020,"V20",36,19
 "Querétaro",2020,"V2",72,1
 "Querétaro",2020,"V3",67,2
 "Querétaro",2020,"V4",63,3
@@ -395,6 +416,7 @@
 "Querétaro",2020,"V17",18,16
 "Querétaro",2020,"V18",17,17
 "Querétaro",2020,"V19",16,18
+"Querétaro",2020,"V20",15,19
 "Quintana Roo",2020,"V2",28,1
 "Quintana Roo",2020,"V3",16,2
 "Quintana Roo",2020,"V4",20,3
@@ -413,6 +435,7 @@
 "Quintana Roo",2020,"V17",13,16
 "Quintana Roo",2020,"V18",24,17
 "Quintana Roo",2020,"V19",12,18
+"Quintana Roo",2020,"V20",14,19
 "San Luis Potosí",2020,"V2",76,1
 "San Luis Potosí",2020,"V3",139,2
 "San Luis Potosí",2020,"V4",171,3
@@ -431,6 +454,7 @@
 "San Luis Potosí",2020,"V17",28,16
 "San Luis Potosí",2020,"V18",25,17
 "San Luis Potosí",2020,"V19",20,18
+"San Luis Potosí",2020,"V20",26,19
 "Sinaloa",2020,"V2",121,1
 "Sinaloa",2020,"V3",150,2
 "Sinaloa",2020,"V4",112,3
@@ -449,6 +473,7 @@
 "Sinaloa",2020,"V17",58,16
 "Sinaloa",2020,"V18",52,17
 "Sinaloa",2020,"V19",56,18
+"Sinaloa",2020,"V20",53,19
 "Sonora",2020,"V2",130,1
 "Sonora",2020,"V3",146,2
 "Sonora",2020,"V4",172,3
@@ -467,6 +492,7 @@
 "Sonora",2020,"V17",31,16
 "Sonora",2020,"V18",38,17
 "Sonora",2020,"V19",37,18
+"Sonora",2020,"V20",65,19
 "Tabasco",2020,"V2",23,1
 "Tabasco",2020,"V3",23,2
 "Tabasco",2020,"V4",38,3
@@ -485,6 +511,7 @@
 "Tabasco",2020,"V17",17,16
 "Tabasco",2020,"V18",22,17
 "Tabasco",2020,"V19",24,18
+"Tabasco",2020,"V20",43,19
 "Tamaulipas",2020,"V2",127,1
 "Tamaulipas",2020,"V3",163,2
 "Tamaulipas",2020,"V4",146,3
@@ -503,6 +530,7 @@
 "Tamaulipas",2020,"V17",44,16
 "Tamaulipas",2020,"V18",31,17
 "Tamaulipas",2020,"V19",27,18
+"Tamaulipas",2020,"V20",31,19
 "Tlaxcala",2020,"V2",37,1
 "Tlaxcala",2020,"V3",34,2
 "Tlaxcala",2020,"V4",22,3
@@ -521,6 +549,7 @@
 "Tlaxcala",2020,"V17",13,16
 "Tlaxcala",2020,"V18",46,17
 "Tlaxcala",2020,"V19",14,18
+"Tlaxcala",2020,"V20",51,19
 "Veracruz",2020,"V2",83,1
 "Veracruz",2020,"V3",95,2
 "Veracruz",2020,"V4",94,3
@@ -539,6 +568,7 @@
 "Veracruz",2020,"V17",36,16
 "Veracruz",2020,"V18",52,17
 "Veracruz",2020,"V19",85,18
+"Veracruz",2020,"V20",116,19
 "Yucatán",2020,"V2",26,1
 "Yucatán",2020,"V3",26,2
 "Yucatán",2020,"V4",32,3
@@ -557,6 +587,7 @@
 "Yucatán",2020,"V17",16,16
 "Yucatán",2020,"V18",7,17
 "Yucatán",2020,"V19",16,18
+"Yucatán",2020,"V20",16,19
 "Zacatecas",2020,"V2",63,1
 "Zacatecas",2020,"V3",100,2
 "Zacatecas",2020,"V4",88,3
@@ -575,6 +606,7 @@
 "Zacatecas",2020,"V17",17,16
 "Zacatecas",2020,"V18",25,17
 "Zacatecas",2020,"V19",35,18
+"Zacatecas",2020,"V20",36,19
 "TOTAL",2020,"V2",3410,1
 "TOTAL",2020,"V3",3559,2
 "TOTAL",2020,"V4",3626,3
@@ -593,6 +625,7 @@
 "TOTAL",2020,"V17",1540,16
 "TOTAL",2020,"V18",2016,17
 "TOTAL",2020,"V19",1840,18
+"TOTAL",2020,"V20",2217,19
 "Aguascalientes",2019,"V2",46,1
 "Aguascalientes",2019,"V3",18,2
 "Aguascalientes",2019,"V4",55,3
@@ -611,6 +644,7 @@
 "Aguascalientes",2019,"V17",20,16
 "Aguascalientes",2019,"V18",20,17
 "Aguascalientes",2019,"V19",17,18
+"Aguascalientes",2019,"V20",35,19
 "Baja California",2019,"V2",122,1
 "Baja California",2019,"V3",165,2
 "Baja California",2019,"V4",195,3
@@ -629,6 +663,7 @@
 "Baja California",2019,"V17",110,16
 "Baja California",2019,"V18",142,17
 "Baja California",2019,"V19",89,18
+"Baja California",2019,"V20",82,19
 "Baja California Sur",2019,"V2",16,1
 "Baja California Sur",2019,"V3",36,2
 "Baja California Sur",2019,"V4",9,3
@@ -647,6 +682,7 @@
 "Baja California Sur",2019,"V17",15,16
 "Baja California Sur",2019,"V18",11,17
 "Baja California Sur",2019,"V19",12,18
+"Baja California Sur",2019,"V20",12,19
 "Campeche",2019,"V2",11,1
 "Campeche",2019,"V3",10,2
 "Campeche",2019,"V4",14,3
@@ -665,6 +701,7 @@
 "Campeche",2019,"V17",4,16
 "Campeche",2019,"V18",13,17
 "Campeche",2019,"V19",6,18
+"Campeche",2019,"V20",13,19
 "Coahuila",2019,"V2",91,1
 "Coahuila",2019,"V3",97,2
 "Coahuila",2019,"V4",122,3
@@ -683,6 +720,7 @@
 "Coahuila",2019,"V17",52,16
 "Coahuila",2019,"V18",47,17
 "Coahuila",2019,"V19",37,18
+"Coahuila",2019,"V20",34,19
 "Colima",2019,"V2",17,1
 "Colima",2019,"V3",23,2
 "Colima",2019,"V4",19,3
@@ -701,6 +739,7 @@
 "Colima",2019,"V17",10,16
 "Colima",2019,"V18",14,17
 "Colima",2019,"V19",8,18
+"Colima",2019,"V20",5,19
 "Chiapas",2019,"V2",26,1
 "Chiapas",2019,"V3",46,2
 "Chiapas",2019,"V4",41,3
@@ -719,6 +758,7 @@
 "Chiapas",2019,"V17",32,16
 "Chiapas",2019,"V18",31,17
 "Chiapas",2019,"V19",37,18
+"Chiapas",2019,"V20",25,19
 "Chihuahua",2019,"V2",483,1
 "Chihuahua",2019,"V3",321,2
 "Chihuahua",2019,"V4",281,3
@@ -737,6 +777,7 @@
 "Chihuahua",2019,"V17",102,16
 "Chihuahua",2019,"V18",116,17
 "Chihuahua",2019,"V19",83,18
+"Chihuahua",2019,"V20",84,19
 "Ciudad de México",2019,"V2",433,1
 "Ciudad de México",2019,"V3",507,2
 "Ciudad de México",2019,"V4",439,3
@@ -755,6 +796,7 @@
 "Ciudad de México",2019,"V17",248,16
 "Ciudad de México",2019,"V18",235,17
 "Ciudad de México",2019,"V19",253,18
+"Ciudad de México",2019,"V20",198,19
 "Durango",2019,"V2",65,1
 "Durango",2019,"V3",63,2
 "Durango",2019,"V4",36,3
@@ -773,6 +815,7 @@
 "Durango",2019,"V17",17,16
 "Durango",2019,"V18",16,17
 "Durango",2019,"V19",10,18
+"Durango",2019,"V20",20,19
 "Guanajuato",2019,"V2",191,1
 "Guanajuato",2019,"V3",180,2
 "Guanajuato",2019,"V4",236,3
@@ -791,6 +834,7 @@
 "Guanajuato",2019,"V17",125,16
 "Guanajuato",2019,"V18",105,17
 "Guanajuato",2019,"V19",100,18
+"Guanajuato",2019,"V20",68,19
 "Guerrero",2019,"V2",9,1
 "Guerrero",2019,"V3",39,2
 "Guerrero",2019,"V4",38,3
@@ -809,6 +853,7 @@
 "Guerrero",2019,"V17",23,16
 "Guerrero",2019,"V18",22,17
 "Guerrero",2019,"V19",15,18
+"Guerrero",2019,"V20",16,19
 "Hidalgo",2019,"V2",71,1
 "Hidalgo",2019,"V3",85,2
 "Hidalgo",2019,"V4",67,3
@@ -827,6 +872,7 @@
 "Hidalgo",2019,"V17",27,16
 "Hidalgo",2019,"V18",42,17
 "Hidalgo",2019,"V19",30,18
+"Hidalgo",2019,"V20",19,19
 "Jalisco",2019,"V2",834,1
 "Jalisco",2019,"V3",823,2
 "Jalisco",2019,"V4",750,3
@@ -845,6 +891,7 @@
 "Jalisco",2019,"V17",269,16
 "Jalisco",2019,"V18",286,17
 "Jalisco",2019,"V19",314,18
+"Jalisco",2019,"V20",269,19
 "México",2019,"V2",239,1
 "México",2019,"V3",332,2
 "México",2019,"V4",294,3
@@ -863,6 +910,7 @@
 "México",2019,"V17",300,16
 "México",2019,"V18",212,17
 "México",2019,"V19",134,18
+"México",2019,"V20",152,19
 "Michoacán",2019,"V2",38,1
 "Michoacán",2019,"V3",49,2
 "Michoacán",2019,"V4",72,3
@@ -881,6 +929,7 @@
 "Michoacán",2019,"V17",41,16
 "Michoacán",2019,"V18",44,17
 "Michoacán",2019,"V19",46,18
+"Michoacán",2019,"V20",28,19
 "Morelos",2019,"V2",8,1
 "Morelos",2019,"V3",19,2
 "Morelos",2019,"V4",9,3
@@ -899,6 +948,7 @@
 "Morelos",2019,"V17",9,16
 "Morelos",2019,"V18",7,17
 "Morelos",2019,"V19",5,18
+"Morelos",2019,"V20",7,19
 "Nayarit",2019,"V2",26,1
 "Nayarit",2019,"V3",41,2
 "Nayarit",2019,"V4",35,3
@@ -917,6 +967,7 @@
 "Nayarit",2019,"V17",23,16
 "Nayarit",2019,"V18",25,17
 "Nayarit",2019,"V19",18,18
+"Nayarit",2019,"V20",9,19
 "Nuevo León",2019,"V2",224,1
 "Nuevo León",2019,"V3",219,2
 "Nuevo León",2019,"V4",210,3
@@ -935,6 +986,7 @@
 "Nuevo León",2019,"V17",116,16
 "Nuevo León",2019,"V18",128,17
 "Nuevo León",2019,"V19",112,18
+"Nuevo León",2019,"V20",69,19
 "Oaxaca",2019,"V2",64,1
 "Oaxaca",2019,"V3",52,2
 "Oaxaca",2019,"V4",45,3
@@ -953,6 +1005,7 @@
 "Oaxaca",2019,"V17",21,16
 "Oaxaca",2019,"V18",43,17
 "Oaxaca",2019,"V19",31,18
+"Oaxaca",2019,"V20",29,19
 "Puebla",2019,"V2",109,1
 "Puebla",2019,"V3",111,2
 "Puebla",2019,"V4",117,3
@@ -971,6 +1024,7 @@
 "Puebla",2019,"V17",100,16
 "Puebla",2019,"V18",74,17
 "Puebla",2019,"V19",56,18
+"Puebla",2019,"V20",35,19
 "Querétaro",2019,"V2",72,1
 "Querétaro",2019,"V3",60,2
 "Querétaro",2019,"V4",68,3
@@ -989,6 +1043,7 @@
 "Querétaro",2019,"V17",51,16
 "Querétaro",2019,"V18",45,17
 "Querétaro",2019,"V19",50,18
+"Querétaro",2019,"V20",23,19
 "Quintana Roo",2019,"V2",34,1
 "Quintana Roo",2019,"V3",23,2
 "Quintana Roo",2019,"V4",14,3
@@ -1007,6 +1062,7 @@
 "Quintana Roo",2019,"V17",9,16
 "Quintana Roo",2019,"V18",9,17
 "Quintana Roo",2019,"V19",14,18
+"Quintana Roo",2019,"V20",9,19
 "San Luis Potosí",2019,"V2",74,1
 "San Luis Potosí",2019,"V3",132,2
 "San Luis Potosí",2019,"V4",132,3
@@ -1025,6 +1081,7 @@
 "San Luis Potosí",2019,"V17",73,16
 "San Luis Potosí",2019,"V18",96,17
 "San Luis Potosí",2019,"V19",64,18
+"San Luis Potosí",2019,"V20",51,19
 "Sinaloa",2019,"V2",68,1
 "Sinaloa",2019,"V3",124,2
 "Sinaloa",2019,"V4",136,3
@@ -1043,6 +1100,7 @@
 "Sinaloa",2019,"V17",61,16
 "Sinaloa",2019,"V18",72,17
 "Sinaloa",2019,"V19",77,18
+"Sinaloa",2019,"V20",55,19
 "Sonora",2019,"V2",220,1
 "Sonora",2019,"V3",270,2
 "Sonora",2019,"V4",304,3
@@ -1061,6 +1119,7 @@
 "Sonora",2019,"V17",164,16
 "Sonora",2019,"V18",130,17
 "Sonora",2019,"V19",110,18
+"Sonora",2019,"V20",118,19
 "Tabasco",2019,"V2",31,1
 "Tabasco",2019,"V3",19,2
 "Tabasco",2019,"V4",20,3
@@ -1079,6 +1138,7 @@
 "Tabasco",2019,"V17",6,16
 "Tabasco",2019,"V18",17,17
 "Tabasco",2019,"V19",11,18
+"Tabasco",2019,"V20",14,19
 "Tamaulipas",2019,"V2",128,1
 "Tamaulipas",2019,"V3",127,2
 "Tamaulipas",2019,"V4",160,3
@@ -1097,6 +1157,7 @@
 "Tamaulipas",2019,"V17",64,16
 "Tamaulipas",2019,"V18",70,17
 "Tamaulipas",2019,"V19",52,18
+"Tamaulipas",2019,"V20",50,19
 "Tlaxcala",2019,"V2",48,1
 "Tlaxcala",2019,"V3",34,2
 "Tlaxcala",2019,"V4",53,3
@@ -1115,6 +1176,7 @@
 "Tlaxcala",2019,"V17",23,16
 "Tlaxcala",2019,"V18",13,17
 "Tlaxcala",2019,"V19",7,18
+"Tlaxcala",2019,"V20",13,19
 "Veracruz",2019,"V2",92,1
 "Veracruz",2019,"V3",85,2
 "Veracruz",2019,"V4",115,3
@@ -1133,6 +1195,7 @@
 "Veracruz",2019,"V17",46,16
 "Veracruz",2019,"V18",94,17
 "Veracruz",2019,"V19",73,18
+"Veracruz",2019,"V20",76,19
 "Yucatán",2019,"V2",35,1
 "Yucatán",2019,"V3",49,2
 "Yucatán",2019,"V4",38,3
@@ -1151,6 +1214,7 @@
 "Yucatán",2019,"V17",29,16
 "Yucatán",2019,"V18",25,17
 "Yucatán",2019,"V19",20,18
+"Yucatán",2019,"V20",15,19
 "Zacatecas",2019,"V2",79,1
 "Zacatecas",2019,"V3",133,2
 "Zacatecas",2019,"V4",138,3
@@ -1169,6 +1233,7 @@
 "Zacatecas",2019,"V17",45,16
 "Zacatecas",2019,"V18",54,17
 "Zacatecas",2019,"V19",46,18
+"Zacatecas",2019,"V20",61,19
 "TOTAL",2019,"V2",4004,1
 "TOTAL",2019,"V3",4292,2
 "TOTAL",2019,"V4",4262,3
@@ -1187,6 +1252,7 @@
 "TOTAL",2019,"V17",2235,16
 "TOTAL",2019,"V18",2258,17
 "TOTAL",2019,"V19",1937,18
+"TOTAL",2019,"V20",1694,19
 "Aguascalientes",2018,"V2",49,1
 "Aguascalientes",2018,"V3",28,2
 "Aguascalientes",2018,"V4",33,3
@@ -1205,6 +1271,7 @@
 "Aguascalientes",2018,"V17",18,16
 "Aguascalientes",2018,"V18",14,17
 "Aguascalientes",2018,"V19",13,18
+"Aguascalientes",2018,"V20",26,19
 "Baja California",2018,"V2",201,1
 "Baja California",2018,"V3",166,2
 "Baja California",2018,"V4",144,3
@@ -1223,6 +1290,7 @@
 "Baja California",2018,"V17",66,16
 "Baja California",2018,"V18",77,17
 "Baja California",2018,"V19",72,18
+"Baja California",2018,"V20",74,19
 "Baja California Sur",2018,"V2",12,1
 "Baja California Sur",2018,"V3",9,2
 "Baja California Sur",2018,"V4",14,3
@@ -1241,6 +1309,7 @@
 "Baja California Sur",2018,"V17",8,16
 "Baja California Sur",2018,"V18",7,17
 "Baja California Sur",2018,"V19",12,18
+"Baja California Sur",2018,"V20",8,19
 "Campeche",2018,"V2",6,1
 "Campeche",2018,"V3",13,2
 "Campeche",2018,"V4",14,3
@@ -1259,6 +1328,7 @@
 "Campeche",2018,"V17",4,16
 "Campeche",2018,"V18",8,17
 "Campeche",2018,"V19",12,18
+"Campeche",2018,"V20",5,19
 "Coahuila",2018,"V2",93,1
 "Coahuila",2018,"V3",109,2
 "Coahuila",2018,"V4",81,3
@@ -1277,6 +1347,7 @@
 "Coahuila",2018,"V17",42,16
 "Coahuila",2018,"V18",24,17
 "Coahuila",2018,"V19",14,18
+"Coahuila",2018,"V20",27,19
 "Colima",2018,"V2",21,1
 "Colima",2018,"V3",14,2
 "Colima",2018,"V4",20,3
@@ -1295,6 +1366,7 @@
 "Colima",2018,"V17",30,16
 "Colima",2018,"V18",13,17
 "Colima",2018,"V19",14,18
+"Colima",2018,"V20",9,19
 "Chiapas",2018,"V2",31,1
 "Chiapas",2018,"V3",29,2
 "Chiapas",2018,"V4",21,3
@@ -1313,6 +1385,7 @@
 "Chiapas",2018,"V17",35,16
 "Chiapas",2018,"V18",27,17
 "Chiapas",2018,"V19",17,18
+"Chiapas",2018,"V20",41,19
 "Chihuahua",2018,"V2",170,1
 "Chihuahua",2018,"V3",224,2
 "Chihuahua",2018,"V4",209,3
@@ -1331,6 +1404,7 @@
 "Chihuahua",2018,"V17",90,16
 "Chihuahua",2018,"V18",84,17
 "Chihuahua",2018,"V19",57,18
+"Chihuahua",2018,"V20",72,19
 "Ciudad de México",2018,"V2",227,1
 "Ciudad de México",2018,"V3",306,2
 "Ciudad de México",2018,"V4",202,3
@@ -1349,6 +1423,7 @@
 "Ciudad de México",2018,"V17",186,16
 "Ciudad de México",2018,"V18",162,17
 "Ciudad de México",2018,"V19",206,18
+"Ciudad de México",2018,"V20",180,19
 "Durango",2018,"V2",15,1
 "Durango",2018,"V3",22,2
 "Durango",2018,"V4",22,3
@@ -1367,6 +1442,7 @@
 "Durango",2018,"V17",18,16
 "Durango",2018,"V18",11,17
 "Durango",2018,"V19",13,18
+"Durango",2018,"V20",11,19
 "Guanajuato",2018,"V2",169,1
 "Guanajuato",2018,"V3",119,2
 "Guanajuato",2018,"V4",112,3
@@ -1385,6 +1461,7 @@
 "Guanajuato",2018,"V17",80,16
 "Guanajuato",2018,"V18",72,17
 "Guanajuato",2018,"V19",84,18
+"Guanajuato",2018,"V20",70,19
 "Guerrero",2018,"V2",35,1
 "Guerrero",2018,"V3",35,2
 "Guerrero",2018,"V4",21,3
@@ -1403,6 +1480,7 @@
 "Guerrero",2018,"V17",39,16
 "Guerrero",2018,"V18",37,17
 "Guerrero",2018,"V19",20,18
+"Guerrero",2018,"V20",24,19
 "Hidalgo",2018,"V2",69,1
 "Hidalgo",2018,"V3",65,2
 "Hidalgo",2018,"V4",64,3
@@ -1421,6 +1499,7 @@
 "Hidalgo",2018,"V17",45,16
 "Hidalgo",2018,"V18",31,17
 "Hidalgo",2018,"V19",31,18
+"Hidalgo",2018,"V20",21,19
 "Jalisco",2018,"V2",594,1
 "Jalisco",2018,"V3",589,2
 "Jalisco",2018,"V4",572,3
@@ -1439,6 +1518,7 @@
 "Jalisco",2018,"V17",419,16
 "Jalisco",2018,"V18",338,17
 "Jalisco",2018,"V19",390,18
+"Jalisco",2018,"V20",342,19
 "México",2018,"V2",199,1
 "México",2018,"V3",224,2
 "México",2018,"V4",263,3
@@ -1457,6 +1537,7 @@
 "México",2018,"V17",148,16
 "México",2018,"V18",145,17
 "México",2018,"V19",120,18
+"México",2018,"V20",122,19
 "Michoacán",2018,"V2",30,1
 "Michoacán",2018,"V3",47,2
 "Michoacán",2018,"V4",43,3
@@ -1475,6 +1556,7 @@
 "Michoacán",2018,"V17",47,16
 "Michoacán",2018,"V18",25,17
 "Michoacán",2018,"V19",15,18
+"Michoacán",2018,"V20",25,19
 "Morelos",2018,"V2",10,1
 "Morelos",2018,"V3",10,2
 "Morelos",2018,"V4",13,3
@@ -1493,6 +1575,7 @@
 "Morelos",2018,"V17",5,16
 "Morelos",2018,"V18",11,17
 "Morelos",2018,"V19",12,18
+"Morelos",2018,"V20",20,19
 "Nayarit",2018,"V2",15,1
 "Nayarit",2018,"V3",14,2
 "Nayarit",2018,"V4",21,3
@@ -1511,6 +1594,7 @@
 "Nayarit",2018,"V17",9,16
 "Nayarit",2018,"V18",23,17
 "Nayarit",2018,"V19",13,18
+"Nayarit",2018,"V20",14,19
 "Nuevo León",2018,"V2",138,1
 "Nuevo León",2018,"V3",131,2
 "Nuevo León",2018,"V4",99,3
@@ -1529,6 +1613,7 @@
 "Nuevo León",2018,"V17",72,16
 "Nuevo León",2018,"V18",57,17
 "Nuevo León",2018,"V19",109,18
+"Nuevo León",2018,"V20",48,19
 "Oaxaca",2018,"V2",33,1
 "Oaxaca",2018,"V3",19,2
 "Oaxaca",2018,"V4",17,3
@@ -1547,6 +1632,7 @@
 "Oaxaca",2018,"V17",24,16
 "Oaxaca",2018,"V18",22,17
 "Oaxaca",2018,"V19",27,18
+"Oaxaca",2018,"V20",17,19
 "Puebla",2018,"V2",95,1
 "Puebla",2018,"V3",89,2
 "Puebla",2018,"V4",81,3
@@ -1565,6 +1651,7 @@
 "Puebla",2018,"V17",63,16
 "Puebla",2018,"V18",64,17
 "Puebla",2018,"V19",49,18
+"Puebla",2018,"V20",49,19
 "Querétaro",2018,"V2",41,1
 "Querétaro",2018,"V3",35,2
 "Querétaro",2018,"V4",52,3
@@ -1583,6 +1670,7 @@
 "Querétaro",2018,"V17",20,16
 "Querétaro",2018,"V18",34,17
 "Querétaro",2018,"V19",24,18
+"Querétaro",2018,"V20",16,19
 "Quintana Roo",2018,"V2",11,1
 "Quintana Roo",2018,"V3",19,2
 "Quintana Roo",2018,"V4",124,3
@@ -1601,6 +1689,7 @@
 "Quintana Roo",2018,"V17",17,16
 "Quintana Roo",2018,"V18",48,17
 "Quintana Roo",2018,"V19",21,18
+"Quintana Roo",2018,"V20",7,19
 "San Luis Potosí",2018,"V2",90,1
 "San Luis Potosí",2018,"V3",110,2
 "San Luis Potosí",2018,"V4",114,3
@@ -1619,6 +1708,7 @@
 "San Luis Potosí",2018,"V17",72,16
 "San Luis Potosí",2018,"V18",73,17
 "San Luis Potosí",2018,"V19",55,18
+"San Luis Potosí",2018,"V20",56,19
 "Sinaloa",2018,"V2",75,1
 "Sinaloa",2018,"V3",82,2
 "Sinaloa",2018,"V4",95,3
@@ -1637,6 +1727,7 @@
 "Sinaloa",2018,"V17",88,16
 "Sinaloa",2018,"V18",53,17
 "Sinaloa",2018,"V19",46,18
+"Sinaloa",2018,"V20",60,19
 "Sonora",2018,"V2",210,1
 "Sonora",2018,"V3",237,2
 "Sonora",2018,"V4",262,3
@@ -1655,6 +1746,7 @@
 "Sonora",2018,"V17",155,16
 "Sonora",2018,"V18",137,17
 "Sonora",2018,"V19",135,18
+"Sonora",2018,"V20",122,19
 "Tabasco",2018,"V2",7,1
 "Tabasco",2018,"V3",15,2
 "Tabasco",2018,"V4",16,3
@@ -1673,6 +1765,7 @@
 "Tabasco",2018,"V17",13,16
 "Tabasco",2018,"V18",8,17
 "Tabasco",2018,"V19",9,18
+"Tabasco",2018,"V20",10,19
 "Tamaulipas",2018,"V2",142,1
 "Tamaulipas",2018,"V3",203,2
 "Tamaulipas",2018,"V4",146,3
@@ -1691,6 +1784,7 @@
 "Tamaulipas",2018,"V17",54,16
 "Tamaulipas",2018,"V18",67,17
 "Tamaulipas",2018,"V19",64,18
+"Tamaulipas",2018,"V20",94,19
 "Tlaxcala",2018,"V2",27,1
 "Tlaxcala",2018,"V3",22,2
 "Tlaxcala",2018,"V4",48,3
@@ -1709,6 +1803,7 @@
 "Tlaxcala",2018,"V17",19,16
 "Tlaxcala",2018,"V18",17,17
 "Tlaxcala",2018,"V19",11,18
+"Tlaxcala",2018,"V20",15,19
 "Veracruz",2018,"V2",85,1
 "Veracruz",2018,"V3",90,2
 "Veracruz",2018,"V4",98,3
@@ -1727,6 +1822,7 @@
 "Veracruz",2018,"V17",78,16
 "Veracruz",2018,"V18",95,17
 "Veracruz",2018,"V19",84,18
+"Veracruz",2018,"V20",82,19
 "Yucatán",2018,"V2",43,1
 "Yucatán",2018,"V3",56,2
 "Yucatán",2018,"V4",29,3
@@ -1745,6 +1841,7 @@
 "Yucatán",2018,"V17",29,16
 "Yucatán",2018,"V18",24,17
 "Yucatán",2018,"V19",17,18
+"Yucatán",2018,"V20",28,19
 "Zacatecas",2018,"V2",107,1
 "Zacatecas",2018,"V3",93,2
 "Zacatecas",2018,"V4",90,3
@@ -1763,6 +1860,7 @@
 "Zacatecas",2018,"V17",39,16
 "Zacatecas",2018,"V18",23,17
 "Zacatecas",2018,"V19",23,18
+"Zacatecas",2018,"V20",21,19
 "TOTAL",2018,"V2",3050,1
 "TOTAL",2018,"V3",3224,2
 "TOTAL",2018,"V4",3140,3
@@ -1781,3 +1879,4 @@
 "TOTAL",2018,"V17",2032,16
 "TOTAL",2018,"V18",1831,17
 "TOTAL",2018,"V19",1789,18
+"TOTAL",2018,"V20",1716,19

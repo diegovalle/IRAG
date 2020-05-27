@@ -11,6 +11,7 @@ if (!file.exists("cache/neumonias_nacional.csv")) {
   ll <- list()
   l <- 1
   for (file in list.files("cache/boletines_nacional/2020/")) {
+    print(file)
     out <- extract_tables(paste0("cache/boletines_nacional/2020/", file),
                           method = "stream", output = "data.frame")
     n <- data.frame()
@@ -41,14 +42,15 @@ if (!file.exists("cache/neumonias_nacional.csv")) {
     l <- l + 1
   }
   save(ll, file = "cache/ll.RData")
-  #load("ll.RData")
+  #load("cache/ll.RData")
   df <- t(as.data.frame(do.call(rbind, ll)))
   df <- as.data.frame(df)
   df$states <- states
   
   ll19 <- list()
   l <- 1
-  for (file in list.files("cache/boletines_nacional/2019/")[1:19]) {
+  for (file in list.files("cache/boletines_nacional/2019/")[1:20]) {
+    print(file)
     out <- extract_tables(paste0("cache/boletines_nacional/2019/", file),
                           method = "stream", output = "data.frame")
     n <- data.frame()
@@ -62,6 +64,8 @@ if (!file.exists("cache/neumonias_nacional.csv")) {
     if (file == "sem18.pdf")
       regex = "nías$"
     if (file == "sem19.pdf")
+      regex = "coneumonías$"
+    if (file == "sem20.pdf")
       regex = "coneumonías$"
     for (i in 1:length(out)) {
       if (any(str_detect(names(out[[i]]), regex))) {
@@ -91,7 +95,8 @@ if (!file.exists("cache/neumonias_nacional.csv")) {
   
   ll18 <- list()
   l <- 1
-  for (file in list.files("cache/boletines_nacional/2018/")[1:19]) {
+  for (file in list.files("cache/boletines_nacional/2018/")[1:20]) {
+    print(file)
     out <- extract_tables(paste0("cache/boletines_nacional/2018/", file),
                           method = "stream", output = "data.frame")
     n <- data.frame()
@@ -148,13 +153,16 @@ df$size <- 1
 df$size[df$year == 2020] <- 1.1
 df <- df %>% 
   group_by(states) %>%
-  mutate(order = value[18] - value[11])
+  arrange(desc(year), week) %>%
+  mutate(order = value[12] / value[19])
 df$color <- "#bababa"
 df$color[df$year == 2020] <- "#0571b0" 
-df$color[df$states %in% c("Ciudad de México", "Baja California", "Veracruz") &
+df$color[df$states %in% c("Ciudad de México", "Baja California",
+                          "México", "Veracruz", "Tabasco", "Tlaxcala",
+                          "Campeche") &
            df$year == 2020] <- "#ca0020"
 
-df$states <- reorder(df$states, -df$order)
+df$states <- reorder(df$states, df$order)
 df %>%
   ggplot(aes(week, value, group = year, color = color)) +
   geom_line(aes(size = size)) + 
@@ -167,7 +175,7 @@ df %>%
                        labels = c("2020\n(incremento)", "2020", "2018-2019")) +
   expand_limits(y = 0) +
   labs(title = "Casos de Neumonías y Bronconeumonías en México, por Estado",
-       subtitle = "La última semana epidemiológica disponible es la 17 que va del 19 de abril 25 de abril\nIncluye CIE-10ª REV. J12-J18 excepto J18.2, J13 y J14",
+       subtitle = "La última semana epidemiológica disponible es la 19 que va del 3 al 9 de mayo\nIncluye CIE-10ª REV. J12-J18 excepto J18.2, J13 y J14",
        caption = "Fuente: Boletín epidemiológico Sistema Nacional de Vigilancia Epidemiológica") +
   xlab("semana epidemiológica") +
   ylab("casos reportados") +
