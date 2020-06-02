@@ -30,7 +30,7 @@ extract_table <- function(out, name, i) {
 }
 
 base_url <- "http://sersalud.cdmx.gob.mx/sspcdmx/Documentos/direccion/demp/boletin/Bolet%C3%ADn%20semanal%20de%20la%20Ciudad%20de%20M%C3%A9xico%20n%C3%BAmero%20"
-last_boletin <- 19
+last_boletin <- 20
 
 df <- data.frame()
 for (i in 1:last_boletin) {
@@ -119,6 +119,13 @@ df$acumH[which(df$tipo == "Hipertensión arterial" &
 df$acumM[which(df$tipo == "Hipertensión arterial" &
                  df$semana == 18)] <- 6684
 
+df$acum19[which(df$tipo == "Hipertensión arterial" &
+                  df$semana == 20)] <- 16404
+df$acumH[which(df$tipo == "Hipertensión arterial" &
+                 df$semana == 20)] <- 5793
+df$acumM[which(df$tipo == "Hipertensión arterial" &
+                 df$semana == 20)] <- 6965
+
 df <- df %>%
   group_by(tipo) %>%
   mutate(acumH = if_else(is.na(acumH), 0, acumH),
@@ -149,7 +156,7 @@ ggplot(df, aes(semana, y20)) +
                      labels = rev(c("2019", "2020"))) +
   expand_limits(y = 0) +
   labs(title = "Casos de Enfermedades Selectas en la Ciudad de México",
-       subtitle = "La última semana epidemiológica disponible es la 19 que va del 3 al 9 de mayo",
+       subtitle = "La última semana epidemiológica disponible es la 20 que va del 10 al 16 de mayo",
        caption = "Fuente: Boletín epidemiológico semanal de la CDMX (http://sersalud.cdmx.gob.mx/sspcdmx/direccion_epi_preven.php)") +
   xlab("semana epidemiológica") +
   ylab("casos reportados") +
